@@ -1,16 +1,19 @@
-<h1>{{ bool.subject }}</h1>
-<div>
-    {{ bool.content }}
-</div>
-<h5>{{ bool.Comment_set|length }}개의 답변이 있습니다.</h5>
-<div>
-    <ul>
-    {% for comment in bool.Comment_set %}
-        <li>{{ comment.content }}</li>
-    {% endfor %}
-    </ul>
-</div>
-<form action="{{ url_for('comment.create', bool_id=bool.id) }}" method="post">
-    <textarea name="content" id="content" rows="15"></textarea>
-    <input type="submit" value="답변등록">
-</form>
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{{ bool.subject }}</h1>
+    <div>
+        {{ bool.content }}
+    </div>
+    <h5>{{ bool.Comment_set|length }}개의 답변이 있습니다.</h5>
+    <div>
+        <ul>
+        {% for comment in bool.Comment_set %}
+            <li>{{ comment.content }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+    <form action="{{ url_for('comment.create', bool_id=bool.id) }}" method="post">
+        <textarea name="content" id="content" rows="15"></textarea>
+        <input type="submit" value="답변등록">
+    </form>
+{% endblock %}

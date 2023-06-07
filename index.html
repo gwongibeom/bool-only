@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>main</title>
-        <link rel="stylesheet" href="static/styles/index.css" />
-        <link rel="stylesheet" href="static/styles/font.css" />
-    </head>
-    <body>
-        <div class="wrap">
-            <div class="nav">
-                <span class="logo">bool만</span>
-                <div class="loginAndDashboardWrap">
-                    <span class="navText">로그인</span>
-                    <span class="navText">대시보드</span>
-                </div>
-            </div>
-            <div class="trend">
-                <h1 class="trendHeadText">인기 BOOL</h1>
-                <div class="trendList">
-                    <div class="trendPanel">
-                        <span>sad</span>
-                        <span>sad</span>
-                    </div>
-                    <div class="trendPanel"></div>
-                    <div class="trendPanel"></div>
-                </div>
-                <button class="reloadTrends">인기글 더 불러오기</button>
-            </div>
-            <div class="descBoolList"></div>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>main</title>
+    <link rel="stylesheet" href="bool/static/index.css"/>
+    <link rel="stylesheet" href="bool/static/font.css"/>
+</head>
+<body>
+<div class="wrap">
+    <div class="nav">
+        <span class="logo">bool만</span>
+        <div class="loginAndDashboardWrap">
+            <span class="navText">로그인</span>
+            <span class="navText">대시보드</span>
         </div>
-    </body>
+    </div>
+    <div class="trend">
+        <h1 class="HeadText">인기 BOOL</h1>
+        <div class="trendList">
+            <div class="trendPanel">
+                <span>sad</span>
+                <span>sad</span>
+            </div>
+            <div class="trendPanel"></div>
+            <div class="trendPanel"></div>
+        </div>
+        <button class="reloadTrends">인기글 더 불러오기</button>
+    </div>
+    <div class="descBoolList">
+        <div class="cateTextAndCreatebtn">
+            <h1 id="HeadText">전체 BOOL</h1>
+            <button>생성</button>
+        </div>
+        <div class="descBoolTableAndCategorys">
+            <fieldset class="categorys">
+                <div>
+                    <input type="radio" id="cate_all" name="cate" checked/>
+                    <span>전체보기</span>
+                </div>
+                <div>
+                    <input type="radio" id="cate_life" name="cate"/>
+                    <span>생활</span>
+                </div>
+                <div>
+                    <input type="radio" id="cate_edu" name="cate"/>
+                    <span>교육</span>
+                </div>
+                <div>
+                    <input type="radio" id="cate_paper" name="cate"/>
+                    <span>행정</span>
+                </div>
+            </fieldset>
+            <table class="descBoolTable">
+                <tr class="boolTr">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr class="boolTr">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
 </html>

@@ -1,15 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hello, pybo!</title>
+    <meta charset="utf-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>불만 - 불만만을 위한 커뮤니티</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='font.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}"/>
+    {% if '/bool/list/' in request.path %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"/>
+    {% endif %}
+    {% if '/bool/detail/' in request.path %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='detail.css') }}"/>
+    {% endif %}
+    {% if request.path == '/bool/create/' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='create.css') }}"/>
+    {% endif %}
 </head>
 <body>
 <!-- 기본 템플릿 안에 삽입될 내용 Start -->
-{% block content %}
-{% endblock %}
+{% block content %} {% endblock %}
 <!-- 기본 템플릿 안에 삽입될 내용 End -->
 </body>
 </html>

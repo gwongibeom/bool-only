@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- 질문 등록 -->
+<div class="wrap">
+    {% include "navbar.html" %}
+    <form method="post">
+        {{ form.csrf_token }}
+        <!-- 오류표시 Start -->
+        {% if form.errors %}
+        <div>
+            {% for field, errors in form.errors.items() %}
+            <strong>{{ form[field].label }}</strong>
+            <ul>
+                {% for error in errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <!-- 오류표시 End -->
+        <div class="titleAndcatesel">
+            <div class="titleInput">
+                <label for="subject">제목</label>
+                <input type="text" class="form-control" name="subject" id="subject"
+                       value="{{ form.subject.data or '' }}">
+            </div>
+            <div class="cateSel">
+                {{ form.category.label }}
+                {{ form.category(class='form-control') }}
+            </div>
+        </div>
+        <div class="contentInput">
+            <label for="content">내용(마크다운)</label>
+            <textarea class="form-control" name="content" id="content"
+                      rows="10">{{ form.content.data or '' }}</textarea>
+        </div>
+        <div class="buttonDiv">
+            <button class="submit" type="submit">생성하기</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

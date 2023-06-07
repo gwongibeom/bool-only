@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+tbody {
+    width: 100%;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.wrap {
+    width: 80vw;
+    height: 100vh;
+}
+
+.trend {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+.trendList {
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 80px;
+}
+
+.trendPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 9px 51px;
+    gap: 10px;
+
+    width: 30%;
+    height: 100%;
+
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.reloadTrends {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    width: 100%;
+    height: 9vh;
+
+    background: #FFFFFF;
+    border-radius: 80px;
+
+
+    font-family: 'Galmuri11';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.descBoolList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.cateTextAndCreatebtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.createBtn {
+    text-align: center;
+    line-height: 4vh;
+    border-radius: 2vh;
+    width: 6vw;
+    height: 4vh;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: black;
+}
+
+.descBoolTableAndCategorys {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.categorys {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+.categorys a {
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 2vh;
+    width: 8vw;
+    height: 5vh;
+    text-decoration: none;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.descBoolTable {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vh 3%;
+}
+
+.boolTr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    margin-bottom: 2vh;
+
+    width: 100%;
+    height: 7vh;
+
+    background: #ffffff;
+    border-radius: 20px;
+}

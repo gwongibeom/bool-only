@@ -1,0 +1,11 @@
+<div class="nav">
+    <a class="logo" href="{{ url_for('bool._list') }}">bool만</a>
+    <div class="loginAndDashboardWrap">
+        {% if g.user %}
+        <a href="{{ url_for('auth.logout') }}" class="navText">로그아웃</a>
+        {% else %}
+        <a href="{{ url_for('auth.login') }}" class="navText">로그인</a>
+        {% endif %}
+        <a class="navText">대시보드</a>
+    </div>
+</div>

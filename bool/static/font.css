@@ -1,7 +1,21 @@
 @import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
 
+* {
+    font-family: 'Galmuri11';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+
 html {
     font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
 }
 
 .logo {
@@ -10,7 +24,9 @@ html {
     font-weight: 700;
     font-size: 3rem;
     line-height: 40px;
+    text-decoration: none;
 }
+
 
 .navText {
     font-family: Galmuri11;
@@ -18,10 +34,11 @@ html {
     font-weight: 700;
 }
 
-.trendHeadText {
+.headText {
     font-family: 'Galmuri11';
     font-style: normal;
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 32px;
 }
+

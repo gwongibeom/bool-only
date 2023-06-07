@@ -27,7 +27,7 @@ def _list(cate=None):
         bool_list = Bool.query.filter_by(cate=cate).order_by(Bool.create_date.desc())
     else:
         bool_list = Bool.query.order_by(Bool.create_date.desc())
-    return render_template('bool/bool_list.html', bool_list=bool_list)
+    return render_template('bool/index.html', bool_list=bool_list)
 
 
 @bp.route('/detail/<int:bool_id>/')

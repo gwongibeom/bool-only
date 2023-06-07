@@ -52,3 +52,21 @@
     align-items: center;
     margin-bottom: 1vh;
 }
+
+.wrapSubmit {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapSubmit button {
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 2vh;
+    width: 10vw;
+    height: 5vh;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}

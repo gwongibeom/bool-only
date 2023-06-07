@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<div>
-    <h5>계정생성</h5>
+<div class="wrap">
+    <h1 class="loginHeadText">계정생성</h1>
     <form method="post">
         {{ form.csrf_token }}
         {% include "form_errors.html" %}
@@ -25,7 +25,9 @@
             <input type="text" name="email" id="email"
                    value="{{ form.email.data or '' }}">
         </div>
-        <button type="submit">생성하기</button>
+        <div class="wrapSubmit">
+            <button type="submit">생성하기</button>
+        </div>
     </form>
 </div>
 {% endblock %}

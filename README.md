@@ -71,7 +71,7 @@ root:.
 │  │  ├─bool
 │  │  │      bool_detail.html 글 보기 페이지
 │  │  │      bool_form.html 글 작성 페이지
-│  │  │      bool_list.html 글 목록 페이지
+│  │  │      index.html 글 목록 페이지
 │  │  │
 │  │  └─profile
 │  │          profile.html 프로필 페이지

@@ -1,0 +1,54 @@
+.wrap {
+    width: 99vw;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginHeadText {
+    font-family: 'Galmuri11';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 32px;
+}
+
+
+.idInput {
+    margin-bottom: 1vh;
+}
+
+.loginBtn {
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 2vh;
+    width: 10vw;
+    height: 5vh;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.createBtn {
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 2vh;
+    width: 10vw;
+    height: 5vh;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1vh;
+}

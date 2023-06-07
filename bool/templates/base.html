@@ -14,6 +14,9 @@
     {% if '/bool/list/' in request.path %}
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"/>
     {% endif %}
+    {% if '/auth/' in request.path %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='auth.css') }}"/>
+    {% endif %}
     {% if '/bool/detail/' in request.path %}
     <link rel="stylesheet" href="{{ url_for('static', filename='detail.css') }}"/>
     {% endif %}
